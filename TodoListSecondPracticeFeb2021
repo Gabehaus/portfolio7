@@ -1,0 +1,17 @@
+{
+    "name": "empty_react_app",
+    "version": "1.0.0",
+    "description": "empty_react_app",
+    "main": "server.js",
+    "scripts": {
+        "start": "node backend/server",
+        "server": "nodemon backend/server",
+        "client": "npm start --prefix fontend",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Gabriel Hauschildt",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
