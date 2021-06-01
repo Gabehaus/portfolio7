@@ -2,6 +2,7 @@
   "name": "empty_react_app",
   "version": "1.0.0",
   "description": "empty_react_app",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server",
@@ -12,7 +13,14 @@
   "author": "Gabriel Hauschildt",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^6.1.0",
+    "colors": "^1.4.0",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "d3": "^6.7.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.7"
   }
 }
