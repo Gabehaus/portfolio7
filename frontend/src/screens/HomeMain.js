@@ -173,7 +173,10 @@ const HomeMain = () => {
   }, [])
 
   return (
-    <Container fluid style={{ background: "#0d0d0d" }}>
+    <Container
+      fluid
+      style={{ background: "#0d0d0d", overflowX: "hidden !important" }}
+    >
       <Row>
         <Col
           className='column1'
@@ -226,8 +229,8 @@ const HomeMain = () => {
           </Row>
         </Col>
       </Row>
-      {/* <Skills radius={radius} /> */}
-      {/* <div style={{ minHeight: "100vh" }}>hi</div> */}
+      <Skills radius={radius} />
+      <div style={{ minHeight: "100vh" }}>hi</div>
     </Container>
   )
 }

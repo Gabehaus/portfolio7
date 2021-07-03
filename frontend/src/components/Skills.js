@@ -45,30 +45,35 @@ const Skills = ({ skill, radius }) => {
   }, [])
 
   return (
-    <div className='skills' id='skills' style={{ maxWidth: "100vw" }}>
-      <Row className='justify-content-center no-gutters'>
-        {screen !== "Mobile" ? (
-          <Col
-            lg={4}
-            md={12}
-            className='bubble-box'
-            style={{
-              border: "none 2px yellow"
-            }}
-            data-aos='fade-right'
-            ref={elemRef}
-          >
-            {isVisible && (
-              <SkillSelector
-                skillSet={chart}
-                screen={screen}
-                skill={skill}
-                radius={radius}
-              />
-            )}
-          </Col>
-        ) : null}
-        <Col lg={5} md={12} className='what-im-into' data-aos='fade-left'>
+    <Row className='justify-content-center no-gutters skills-row'>
+      {screen !== "Mobile" ? (
+        <Col
+          lg={4}
+          md={12}
+          className='bubble-box'
+          style={{
+            border: "none 2px yellow"
+          }}
+          data-aos='fade-right'
+          ref={elemRef}
+        >
+          {isVisible && (
+            <SkillSelector
+              skillSet={chart}
+              screen={screen}
+              skill={skill}
+              radius={radius}
+            />
+          )}
+        </Col>
+      ) : null}
+      <Col
+        lg={5}
+        md={12}
+        className='what-im-into'
+        data-aos={screen !== "Mobile" ? "fade-left" : null}
+      >
+        <Row className='into-row'>
           <Col
             md={12}
             className='work-title2 mt-5'
@@ -78,50 +83,51 @@ const Skills = ({ skill, radius }) => {
           </Col>{" "}
           <Col
             md={12}
-            className={screen !== "Desktop" ? "paragraph" : "paragraph"}
+            className='paragraph'
             style={{ background: "transparent" }}
           >
-            From <span className='blue-text'>moving businesses online </span>to
-            building <span className='blue-text'>full-stack mobile apps</span>,
-            if you can dream it I can code it. I try to think of every project I
-            work on as a coupling of{" "}
+            From <span className='blue-text'>moving businesses online </span>
+            to building{" "}
+            <span className='blue-text'>full-stack mobile apps</span>, if you
+            can dream it I can code it. I try to think of every project I work
+            on as a coupling of{" "}
             <span className='blue-text'>art and technology</span>. As Steve Jobs
             said, "it's technology married with liberal arts, married with the
-            humanities, that yields us the results that make our heart sing."
+            humanities, that yields us the results that make our hearts sing."
           </Col>
-          {screen === "Mobile" ? (
-            <Col className='white-i-use-plus-skills'>
-              <React.Fragment>
-                <Col
-                  md={12}
-                  className='work-title3'
-                  style={{
-                    background: "transparent"
-                  }}
-                >
-                  What I use
-                </Col>
-                <Col
-                  md={12}
-                  style={{
-                    marginLeft: "0vw",
-                    border: "none 2px yellow"
-                  }}
-                  className='mb-5'
-                >
-                  <SkillSelector
-                    skillSet={chart}
-                    screen={screen}
-                    skill={skill}
-                    radius={radius}
-                  />
-                </Col>
-              </React.Fragment>
-            </Col>
-          ) : null}
-        </Col>
-      </Row>
-    </div>
+        </Row>
+        {screen === "Mobile" ? (
+          <Col className='white-i-use-plus-skills'>
+            <React.Fragment>
+              <Col
+                md={12}
+                className='work-title3'
+                style={{
+                  background: "transparent"
+                }}
+              >
+                What I use
+              </Col>
+              <Col
+                md={12}
+                style={{
+                  marginLeft: "0vw",
+                  border: "none 2px yellow"
+                }}
+                className='mb-5'
+              >
+                <SkillSelector
+                  skillSet={chart}
+                  screen={screen}
+                  skill={skill}
+                  radius={radius}
+                />
+              </Col>
+            </React.Fragment>
+          </Col>
+        ) : null}
+      </Col>
+    </Row>
   )
 }
 
