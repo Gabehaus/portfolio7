@@ -28,7 +28,7 @@ const Skills = ({ skill, radius }) => {
         return
       }
 
-      if (window.innerWidth < 1000 && window.innerWidth > 580) {
+      if (window.innerWidth < 1080 && window.innerWidth > 580) {
         setScreen("Ipad")
         return
       }
@@ -111,8 +111,10 @@ const Skills = ({ skill, radius }) => {
               <Col
                 md={12}
                 style={{
-                  marginLeft: "0vw",
-                  border: "none 2px yellow"
+                  marginLeft: "0vw !important",
+                  border: "none 2px yellow",
+                  paddingLeft: "0vw !important",
+                  background: "yellow !important"
                 }}
                 className='mb-5'
               >

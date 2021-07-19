@@ -140,10 +140,12 @@ body {
 .bubble-box {
   margin-top: 1vw !important;
   margin-left: -6vw !important;
+  /* background: pink; */
+  padding-left: 3vw !important;
 }
 
 .what-im-into {
-  margin-top: 3vw !important;
+  margin-top: 2vw !important;
   background: transparent;
   border: none 1px yellow;
 
@@ -155,13 +157,15 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 10vh;
-  text-align: center;
-
+  /* text-align: center; */
+  padding-left: 8vw !important;
   z-index: "20";
 
   margin-top: 2vw !important;
   color: #564aff !important;
   margin-bottom: 2vw;
+  /* margin-left: -1.8vw !important; */
+  background: transparent !important;
 }
 
 .paragraph {
@@ -172,7 +176,7 @@ body {
 
   font-size: 1.5vw;
   padding-right: 5vw !important;
-  padding-left: 6.8vw !important;
+  padding-left: 9vw !important;
 }
 
 .work-title3 {
@@ -202,7 +206,6 @@ body {
     font-size: 8.8vh !important;
   }
   .ThreeD1 {
-    width: 70% !important;
     height: 52vh;
     background: transparent;
   }
@@ -218,11 +221,17 @@ body {
   .work-title2 {
     margin-top: 5vw !important;
     font-size: 8.5vh;
+    padding-left: 9vw !important;
   }
 
   .paragraph {
     margin-bottom: 1vw;
+    padding-left: 9.8vw !important;
     /* margin-left: 2vw; */
+  }
+
+  .bubble-box {
+    padding-left: 7vw !important;
   }
 }
 
@@ -252,12 +261,16 @@ body {
     margin-top: 6vh !important;
   }
 
+  .column2b {
+    margin-top: 0vh !important;
+  }
+
   .work-title2 {
     font-size: 6vh;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1080px) {
   .h1 {
     font-size: 7.4vh !important;
   }
@@ -265,9 +278,40 @@ body {
   .h2 {
     line-height: 5vw !important;
   }
-}
 
-@media (max-width: 850px) {
+  .what-im-into {
+    margin-top: 0vw !important;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    text-align: center;
+  }
+
+  .paragraph {
+    padding-left: 7vw !important;
+    padding-right: 7vw !important;
+    font-size: 4vw !important;
+    padding-top: 1vw;
+  }
+
+  .work-title2 {
+    font-size: 10vw !important;
+  }
+
+  .tagcloud {
+    display: none;
+  }
+
+  .skills-row {
+    margin-top: -40vh !important;
+
+    padding-left: 0vw !important;
+  }
+
+  .bubble-box {
+    padding-left: 0vw !important;
+    margin-left: 0vw !important;
+  }
+
   .ThreeD1 {
     width: 100% !important;
   }
@@ -297,16 +341,6 @@ body {
     margin-top: 0vw !important;
   }
 
-  .what-im-into {
-    margin-top: 0vw !important;
-  }
-
-  .circle-wrapper {
-    position: relative;
-  }
-}
-
-@media (max-width: 770px) {
   .h2 {
     padding-top: 0vw !important;
     padding-left: 4vw;
@@ -414,6 +448,7 @@ body {
     color: white !important;
     font-weight: 700;
     color: #8a82ff !important;
+    font-size: 6vh !important;
   }
 
   .paragraph {

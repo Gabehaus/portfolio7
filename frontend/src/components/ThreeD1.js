@@ -11,7 +11,13 @@ function Dolly() {
   // This one makes the camera move in and out
   useFrame(({ clock, camera }) => {
     camera.position.z =
-      window.innerWidth > 1600 ? 3.1 : window.innerWidth > 580 ? 4.5 : 3.8
+      window.innerWidth > 1600
+        ? 3.1
+        : window.innerWidth > 1030
+        ? 3.3
+        : window.innerWidth > 580
+        ? 3.8
+        : 3.6
     camera.position.y = 0
   })
 

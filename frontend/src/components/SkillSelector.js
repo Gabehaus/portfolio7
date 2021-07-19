@@ -41,7 +41,7 @@ const SkillSelector = ({ screen, radius }) => {
     ]
 
     const options = {
-      radius: `350`,
+      radius: `${radius}`,
       maxSpeed: "fast",
       initSpeed: "fast",
       fill: "blue"
@@ -60,8 +60,8 @@ const SkillSelector = ({ screen, radius }) => {
   }, [])
 
   return (
-    <div id='circle-wrapper'>
-      {screen === "Desktop" ? (
+    <div id='circle-wrapper' style={{ border: "solid 2px green !important" }}>
+      {screen ? (
         <div
           class='tagcloud'
           style={{

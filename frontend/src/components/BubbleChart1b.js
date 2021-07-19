@@ -203,10 +203,13 @@ class BubbleChart1b extends React.Component {
             width={"100vw"} //window.innerWidth < 800 ? "100vw" : "50vw"   "#0d0d0d"
             height={"50vh"}
             style={{
+              display: "flex !important",
               marginTop: "0vh",
               overflow: "visible",
               background: "transparent",
-              border: "none 2px yellow"
+
+              border: "none 2px yellow",
+              justifyContent: "center !important"
             }}
           >
             {this.renderBubbles(this.state.data)}

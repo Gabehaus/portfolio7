@@ -32,6 +32,7 @@ export const useStore = create(set => ({
 }))
 
 export function Box({ id, xMs, yMs, scrollY }) {
+  const sizeFactor = 1.5
   const mesh = useRef()
   const coordinates = useRef([0, 0, 1])
   useEffect(() =>

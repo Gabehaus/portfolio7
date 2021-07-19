@@ -152,7 +152,7 @@ const HomeMain = () => {
         return
       }
 
-      if (window.innerWidth < 800 && window.innerWidth > 580) {
+      if (window.innerWidth < 1030 && window.innerWidth > 580) {
         setScreen("Ipad")
         return
       }
@@ -177,6 +177,7 @@ const HomeMain = () => {
       fluid
       style={{ background: "#0d0d0d", overflowX: "hidden !important" }}
     >
+      {/* row 1*/}
       <Row>
         <Col
           className='column1'
@@ -184,9 +185,11 @@ const HomeMain = () => {
           sm={{ span: 12, order: 2 }}
           md={{ span: 6, order: 1 }}
         >
+          {/* row 1 a */}
           <Row>
             <Col className='column1b'>
               {" "}
+              {/* row 1 a a */}
               <Row className='h1'>Hi, I'm Gabe</Row>
               <Row className='h1 h1b'>I build websites</Row>
               <Row className='h2'>
@@ -215,6 +218,7 @@ const HomeMain = () => {
               </Row>
             </Col>
           </Row>
+          {/* end of row 1a */}
         </Col>
         <Col
           xs={{ span: 12, order: 1 }}
@@ -229,6 +233,7 @@ const HomeMain = () => {
           </Row>
         </Col>
       </Row>
+      {/* end of row 1 */}
       <Skills radius={radius} />
       <div style={{ minHeight: "100vh" }}>hi</div>
     </Container>
