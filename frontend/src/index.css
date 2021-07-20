@@ -5,6 +5,8 @@ body {
   box-sizing: border-box;
   max-width: 100% !important;
   overflow-x: hidden !important;
+  overscroll-behavior: none;
+
   background: "#0d0d0d" !important;
 }
 
@@ -169,7 +171,7 @@ body {
 }
 
 .work-title2 {
-  /* border: solid 1px pink; */
+  border: none 1px yellow;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 10vh;
@@ -182,6 +184,7 @@ body {
   margin-bottom: 2vw;
   /* margin-left: -1.8vw !important; */
   background: transparent !important;
+  max-width: 100vw !important;
 }
 
 .contact-title {
@@ -337,6 +340,55 @@ body {
   font-size: 1.8vh;
 }
 
+.footer-col {
+  font-family: "Poppins";
+  border: none 2px blue;
+  padding-left: 5vw !important;
+}
+
+h3 {
+  font-size: 1.8vw !important;
+}
+
+.footer-p {
+  font-family: "Arial";
+  color: silver;
+}
+
+.subButton {
+  background: #ae9eff;
+  font-family: "Arial";
+  color: black;
+  border: none;
+  margin-left: 5px;
+}
+
+.formInput {
+  background: #b8b4cc;
+  border: none;
+}
+
+.logo1 {
+  width: 2vw;
+  margin-top: 0.4vw;
+}
+
+.logo1b {
+  margin-left: 0.2vw;
+}
+
+li {
+  list-style-type: none;
+  font-family: "Arial";
+  padding-top: 5px;
+  color: #564aff;
+}
+
+.a {
+  text-decoration: none !important;
+  color: #ae9eff !important;
+}
+
 @media (max-width: 3000px) {
 }
 
@@ -391,6 +443,10 @@ body {
     height: 3vw;
     font-size: 1.2vw;
     margin-left: -7vw;
+  }
+
+  .mb-5 {
+    margin-left: -8vw !important;
   }
 }
 
@@ -476,14 +532,15 @@ body {
     padding-top: 1vw;
   }
 
-  .work-title2 {
+  .work-title2,
+  .work-title3 {
     font-size: 10vw !important;
+    padding-left: 0vw !important;
   }
 
   .tagcloud,
   .tagcloudMobile {
-    /* display: none; */
-    /* background: pink; */
+    background: transparent;
     width: 100vw !important;
     display: flex;
     justify-content: center;
@@ -593,6 +650,52 @@ body {
 
   .app-box2 {
     margin-left: -7vw !important;
+  }
+
+  h3 {
+    font-size: 4vw !important;
+    padding-top: 7vw !important;
+  }
+
+  .footer-p {
+    font-family: "Arial";
+    color: silver;
+    font-size: 3vw;
+  }
+
+  .subButton {
+    background: #ae9eff;
+    font-family: "Arial";
+    color: black;
+    border: none;
+    margin-left: 5px;
+  }
+
+  .formInput {
+    background: #b8b4cc;
+    border: none;
+  }
+
+  .logo1 {
+    width: 5vw;
+    margin-top: 0.4vw;
+  }
+
+  .logo1b {
+    margin-left: 0.2vw;
+  }
+
+  li {
+    list-style-type: none;
+    font-family: "Arial";
+    padding-top: 5px;
+    color: #564aff;
+  }
+
+  .a {
+    text-decoration: none !important;
+    color: #ae9eff !important;
+    font-size: 3vw;
   }
 }
 

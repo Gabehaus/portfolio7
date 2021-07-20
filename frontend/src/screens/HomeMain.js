@@ -9,6 +9,7 @@ import ThreeD1 from "../components/ThreeD1"
 import Skills from "../components/Skills"
 import Contact from "../components/Contact"
 import Work from "../components/Work"
+import Footer from "../components/Footer"
 
 const HomeMain = () => {
   const [screen, setScreen] = useState("")
@@ -177,7 +178,11 @@ const HomeMain = () => {
   return (
     <Container
       fluid
-      style={{ background: "#0d0d0d", overflowX: "hidden !important" }}
+      style={{
+        background: "#0d0d0d",
+        overflowX: "hidden !important",
+        overflowY: "hidden !important"
+      }}
     >
       {/* row 1*/}
       <Row>
@@ -247,8 +252,9 @@ const HomeMain = () => {
 
       <Contact />
       <Work />
+      <Footer />
 
-      <div style={{ minHeight: "100vh" }}>hi</div>
+      <div style={{ minHeight: "10vh" }}>hi</div>
     </Container>
   )
 }

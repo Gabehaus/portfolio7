@@ -58,10 +58,10 @@ export default function Contact() {
   }
 
   return (
-    <Row data-aos='fade-in' className='py-5'>
-      <Col className='contact-column-one mx-auto py-5 mx-0' xl={8} md={10}>
+    <Row data-aos='fade-in' className='py-5 my-5' id='contact'>
+      <Col className='contact-column-one mx-auto py-5 mx-0 my-5' xl={8} md={10}>
         <Row className='mx-auto'>
-          <Col className='contact-title text-center'>Contact</Col>
+          <Col className='work-title3 text-center'>Contact</Col>
         </Row>
         <Form
           onSubmit={handleSubmit}

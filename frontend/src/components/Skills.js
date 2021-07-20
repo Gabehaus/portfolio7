@@ -45,10 +45,10 @@ const Skills = ({ skill, radius }) => {
   }, [])
 
   return (
-    <Row className='justify-content-center no-gutters skills-row'>
+    <Row className='justify-content-center no-gutters skills-row' id='skills'>
       {screen !== "Mobile" ? (
         <Col
-          lg={4}
+          xl={4}
           md={12}
           className='bubble-box'
           data-aos='fade-right'
@@ -74,7 +74,7 @@ const Skills = ({ skill, radius }) => {
           <Col
             md={12}
             className='work-title2 mt-5'
-            style={{ background: "transparent", letterSpacing: "3px" }}
+            style={{ letterSpacing: "3px" }}
           >
             What I'm into
           </Col>{" "}
@@ -105,7 +105,7 @@ const Skills = ({ skill, radius }) => {
               >
                 What I use
               </Col>
-              <Col md={12} className='mb-5'>
+              <Col lg={12} md={12} className='mb-5'>
                 <SkillSelector
                   skillSet={chart}
                   screen={screen}
