@@ -584,7 +584,7 @@ body {
   } */
 
   .contact-button {
-    margin-left: 2.5vw;
+    margin-left: 1vw;
     border: solid 2px #4621ff;
     font-size: 2vw;
     margin-top: 0vw !important;
@@ -597,10 +597,6 @@ body {
   .h1 {
     font-size: 4.8vh !important;
     padding-left: 5vw;
-  }
-
-  .contact-button {
-    margin-left: 2vw;
   }
 
   /* .paragraph {
@@ -739,7 +735,7 @@ body {
   }
 
   .contact-button {
-    margin-left: 1vw;
+    margin-left: 0vw;
     font-size: 4vw;
     margin-top: 2vw !important;
   }
