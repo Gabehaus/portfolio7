@@ -542,10 +542,11 @@ body {
 
   .tagcloud,
   .tagcloudMobile {
-    background: transparent;
+    background: pink;
     width: 100vw !important;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    border: solid 2px yellow;
   }
 
   .skills-row {
@@ -731,12 +732,13 @@ body {
   .h2 {
     padding-top: 8vw !important;
     padding-left: 2vw;
-    font-size: 4.8vw !important;
+    font-size: 5.1vw !important;
+    font-weight: 500 !important;
     min-height: 7vh;
     color: #8a82ff !important;
   }
   .h1 {
-    font-size: 4.8vh !important;
+    font-size: 6vh !important;
     padding-left: 5vw;
     min-height: 7vh;
     font-weight: 700 !important;
@@ -786,7 +788,7 @@ body {
 
   .what-im-into {
     border: none 1px #937aff;
-    margin-left: -1vw !important;
+    /* margin-left: -1vw !important; */
     max-width: 100vw !important;
     margin-bottom: 5vw;
     margin-top: -18vw !important;
@@ -801,6 +803,11 @@ body {
     font-weight: 700;
     color: #8a82ff !important;
     font-size: 6vh !important;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    margin-right: 0 !important;
   }
 
   .paragraph {
