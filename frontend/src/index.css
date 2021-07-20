@@ -101,7 +101,7 @@ body {
     padding-left: 5vw;
     padding-right: 5vw;
     margin-top: 3vh !important;
-    border: solid 5px pink;
+    border: solid 5px #4621ff;
     color: #4621ff;
     background: transparent;
     letter-spacing: 4px !important;
@@ -584,7 +584,7 @@ body {
   } */
 
   .contact-button {
-    margin-left: 8vw;
+    margin-left: 2.5vw;
     border: solid 2px #4621ff;
     font-size: 2vw;
     margin-top: 0vw !important;
@@ -600,7 +600,7 @@ body {
   }
 
   .contact-button {
-    margin-left: 4vw;
+    margin-left: 2vw;
   }
 
   /* .paragraph {
