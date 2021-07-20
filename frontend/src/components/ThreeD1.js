@@ -13,10 +13,14 @@ function Dolly() {
     camera.position.z =
       window.innerWidth > 1600
         ? 3.1
-        : window.innerWidth > 1030
-        ? 3.3
+        : window.innerWidth > 1040
+        ? 3.6
+        : window.innerWidth > 1010
+        ? 4.2
+        : window.innerWidth > 760
+        ? 4.9
         : window.innerWidth > 580
-        ? 3.8
+        ? 4
         : 3.6
     camera.position.y = 0
   })

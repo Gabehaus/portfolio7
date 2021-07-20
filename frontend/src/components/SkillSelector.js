@@ -41,7 +41,7 @@ const SkillSelector = ({ screen, radius }) => {
     ]
 
     const options = {
-      radius: `${radius}`,
+      radius: screen === "Desktop" ? `${radius}` : 250,
       maxSpeed: "fast",
       initSpeed: "fast",
       fill: "blue"
@@ -60,35 +60,30 @@ const SkillSelector = ({ screen, radius }) => {
   }, [])
 
   return (
-    <div id='circle-wrapper' style={{ border: "solid 2px green !important" }}>
-      {screen ? (
+    <div id='circle-wrapper'>
+      {screen === "Desktop" || screen === "Ipad" ? (
         <div
           class='tagcloud'
           style={{
-            marginLeft: "-5vw",
             marginTop: "-7vh",
             zIndex: "-1",
-            minWidth: "10vw",
+
             minHeight: "20vw",
-            background: "blue !important",
+
             border: "solid 1x white",
             overflow: "visible",
             color: "white"
           }}
         ></div>
       ) : null}
-      {screen === "Ipad" ? <BubbleChart1b useLabels data={rawdata4} /> : null}
+      {/* {screen === "Ipad" ? <BubbleChart1b useLabels data={rawdata4} /> : null} */}
       {screen === "Mobile" ? (
         <div
           class='tagcloudMobile'
           style={{
-            paddingLeft: "8vw",
             marginTop: "5vw",
             zIndex: "-1",
-            minWidth: "10vw",
-            minHeight: "20vw",
-            background: "blue !important",
-            border: "solid 1x white",
+            border: "solid 2px yellow !important",
             overflow: "visible"
           }}
         ></div>

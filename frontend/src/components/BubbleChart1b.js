@@ -159,8 +159,8 @@ class BubbleChart1b extends React.Component {
       return (
         <g
           key={index}
-          transform={`translate(${props.width / 1.5 + item.x}, ${props.height /
-            1.5 +
+          transform={`translate(${props.width / 2.7 + item.x}, ${props.height /
+            1.2 +
             item.y})`} //divisors originally were of value 2, this is how to move circles inside square 3, 1.7, 1.3
         >
           <circle
@@ -191,22 +191,25 @@ class BubbleChart1b extends React.Component {
       return (
         <div
           style={{
-            minHeight: window.innerHeight < 1000 ? "90vh" : "0vw",
-            minWidth: "50vw",
+            minHeight: window.innerHeight < 1200 ? "90vh" : "0vw",
+            width: "100vw",
             position: "relative !important",
-
-            marginBottom: "20vw !important"
+            background: "transparent",
+            overflow: "visible",
+            marginBottom: "20vw !important",
+            display: "flex !important",
+            justifyContent: "center !important"
           }}
         >
           {" "}
           <svg
-            width={"100vw"} //window.innerWidth < 800 ? "100vw" : "50vw"   "#0d0d0d"
+            width={"10vw"} //window.innerWidth < 800 ? "100vw" : "50vw"   "#0d0d0d"
             height={"50vh"}
             style={{
               display: "flex !important",
-              marginTop: "0vh",
+              marginTop: "12vh",
               overflow: "visible",
-              background: "transparent",
+              background: "blue",
 
               border: "none 2px yellow",
               justifyContent: "center !important"

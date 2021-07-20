@@ -23,12 +23,12 @@ const Skills = ({ skill, radius }) => {
   //set screen variable
   useEffect(() => {
     const screenSet = () => {
-      if (window.innerWidth > 1000) {
+      if (window.innerWidth > 1200) {
         setScreen("Desktop")
         return
       }
 
-      if (window.innerWidth < 1080 && window.innerWidth > 580) {
+      if (window.innerWidth < 1200 && window.innerWidth > 580) {
         setScreen("Ipad")
         return
       }
@@ -51,9 +51,6 @@ const Skills = ({ skill, radius }) => {
           lg={4}
           md={12}
           className='bubble-box'
-          style={{
-            border: "none 2px yellow"
-          }}
           data-aos='fade-right'
           ref={elemRef}
         >
@@ -68,8 +65,8 @@ const Skills = ({ skill, radius }) => {
         </Col>
       ) : null}
       <Col
-        lg={5}
-        md={12}
+        xl={5}
+        lg={12}
         className='what-im-into'
         data-aos={screen !== "Mobile" ? "fade-left" : null}
       >
@@ -108,16 +105,7 @@ const Skills = ({ skill, radius }) => {
               >
                 What I use
               </Col>
-              <Col
-                md={12}
-                style={{
-                  marginLeft: "0vw !important",
-                  border: "none 2px yellow",
-                  paddingLeft: "0vw !important",
-                  background: "yellow !important"
-                }}
-                className='mb-5'
-              >
+              <Col md={12} className='mb-5'>
                 <SkillSelector
                   skillSet={chart}
                   screen={screen}

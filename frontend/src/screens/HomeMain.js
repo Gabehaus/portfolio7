@@ -7,6 +7,8 @@ import useMousePosition from "../hooks/useMousePosition"
 import useScrollPosition from "@react-hook/window-scroll"
 import ThreeD1 from "../components/ThreeD1"
 import Skills from "../components/Skills"
+import Contact from "../components/Contact"
+import Work from "../components/Work"
 
 const HomeMain = () => {
   const [screen, setScreen] = useState("")
@@ -152,7 +154,7 @@ const HomeMain = () => {
         return
       }
 
-      if (window.innerWidth < 1030 && window.innerWidth > 580) {
+      if (window.innerWidth < 1200 && window.innerWidth > 580) {
         setScreen("Ipad")
         return
       }
@@ -190,7 +192,14 @@ const HomeMain = () => {
             <Col className='column1b'>
               {" "}
               {/* row 1 a a */}
-              <Row className='h1'>Hi, I'm Gabe</Row>
+              <Row
+                className='h1'
+                onClick={() => {
+                  alert(window.innerWidth)
+                }}
+              >
+                Hi, I'm Gabe
+              </Row>
               <Row className='h1 h1b'>I build websites</Row>
               <Row className='h2'>
                 {" "}
@@ -235,6 +244,10 @@ const HomeMain = () => {
       </Row>
       {/* end of row 1 */}
       <Skills radius={radius} />
+
+      <Contact />
+      <Work />
+
       <div style={{ minHeight: "100vh" }}>hi</div>
     </Container>
   )
