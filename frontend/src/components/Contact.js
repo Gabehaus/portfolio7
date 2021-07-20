@@ -80,7 +80,7 @@ export default function Contact() {
               <input
                 type='text'
                 name='name'
-                className='rounded-0 mr-0 input-name'
+                className='rounded-0 mr-0 mt-4 input-name'
                 id='name'
                 value={name}
                 onChange={updateName}
@@ -92,7 +92,7 @@ export default function Contact() {
               <input
                 type='email'
                 name='email'
-                className='rounded-0 ml-0 input-email'
+                className='rounded-0 ml-0  mt-4 input-email'
                 id='exampleEmail'
                 value={email}
                 onChange={updateEmail}

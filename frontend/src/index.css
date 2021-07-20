@@ -614,7 +614,6 @@ body {
 
   .input-name,
   .input-email {
-    margin-top: 2vw !important;
     height: 4vw !important;
   }
 
@@ -859,13 +858,10 @@ body {
   .input-name,
   .input-email {
     height: 10vw !important;
-    margin-top: 6vw !important;
-    margin-bottom: 0vw !important;
   }
 
   .input-message {
     height: 17vw !important;
-    margin-top: 1vw !important;
   }
 
   .project-desc1 {
