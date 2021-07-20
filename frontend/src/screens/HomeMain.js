@@ -216,7 +216,7 @@ const HomeMain = () => {
               </Row>
               <Row>
                 <Col className='small-text px-3'>
-                  <input
+                  <button
                     type='button'
                     onClick={e => {
                       e.preventDefault()
@@ -227,7 +227,9 @@ const HomeMain = () => {
                     ref={buttonOneRef}
                     onMouseEnter={onMouseEnterHandler}
                     onMouseLeave={onMouseLeaveHandler}
-                  />
+                  >
+                    Contact Me!
+                  </button>
                 </Col>
               </Row>
             </Col>
