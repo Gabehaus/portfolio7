@@ -215,7 +215,7 @@ const HomeMain = () => {
                 </p>
               </Row>
               <Row>
-                <Col className='small-text px-3'>
+                <Col className='small-text'>
                   <button
                     type='button'
                     onClick={e => {
