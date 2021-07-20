@@ -101,7 +101,7 @@ body {
     padding-left: 5vw;
     padding-right: 5vw;
     margin-top: 3vh !important;
-    border: solid 5px #4621ff;
+    border: solid 5px pink;
     color: #4621ff;
     background: transparent;
     letter-spacing: 4px !important;
@@ -109,7 +109,7 @@ body {
     font-family: "Roboto", sans-serif !important;
     font-weight: 400 !important;
     margin-top: 3.5vh !important;
-    margin-left: 0vw !important;
+    margin-left: 9.3vw !important;
   }
 
   .small-text {
